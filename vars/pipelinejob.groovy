@@ -1,3 +1,7 @@
+def run() { 
+    return this
+}
+
 def checkout() {
     echo 'Checking out code...'
     checkout scm
@@ -16,3 +20,4 @@ def run() {
     echo "The application is running and accessible at: http://${publicIp}:8080"
     sleep(time: 30, unit: 'SECONDS')
 }
+
